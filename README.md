@@ -6,9 +6,6 @@ SR is entirely decentralised.
 
 It uses BNS for resolving packages and Hypr for secure transport. 
 
-By default, the CLI tools will connect to the hypr.resolve service on `localhost:15`. 
-If your resolution service is running on another port, you need to specify this by running: 
+The CLI tools will connect to the hypr.resolve service by reading the global file defining what UDP port the hypr.resolve is running on locally. 
 
-```bash
-sr --set-resolver-port <port>
-```
+This file can _only_ be changed by the administrator and hypr.resolve, and shouldn't be changed manually by anyone or anything other than hypr.resolve. 
