@@ -10,7 +10,5 @@ By default, the CLI tools will connect to the hypr.resolve service on `localhost
 If your resolution service is running on another port, you need to specify this by running: 
 
 ```bash
-sr --set-resolver-port {portnumber}
+sr --set-resolver-port <port>
 ```
-
-where `{portnumber}` is the port the resolver is running on. 
